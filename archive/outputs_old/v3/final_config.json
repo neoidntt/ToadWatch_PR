@@ -1,0 +1,33 @@
+{
+  "params": {
+    "per_variant": {
+      "call_only": {
+        "n_estimators": 300,
+        "max_depth": 12,
+        "min_samples_leaf": 3,
+        "max_features": "sqrt"
+      },
+      "message_only": {
+        "n_estimators": 300,
+        "max_depth": 12,
+        "min_samples_leaf": 3,
+        "max_features": "sqrt"
+      },
+      "combined_early": {
+        "n_estimators": 300,
+        "max_depth": 12,
+        "min_samples_leaf": 3,
+        "max_features": "sqrt"
+      }
+    }
+  },
+  "hard_weight": 1.0,
+  "selected_by": "mean F1 of family-safe leave-one-fold-out CV on the development buckets (test never used)",
+  "ceilings": {
+    "majority_class": 0.6010498687664042,
+    "call_oracle": 0.8489355497229513,
+    "message_oracle": 0.8489355497229513,
+    "both_channels_oracle": 1.0
+  },
+  "seed": 2028
+}

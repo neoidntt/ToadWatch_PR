@@ -1,0 +1,87 @@
+{
+  "params": {
+    "per_variant": {
+      "call_only": {
+        "n_estimators": 300,
+        "max_depth": 12,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt"
+      },
+      "message_only": {
+        "n_estimators": 300,
+        "max_depth": null,
+        "min_samples_leaf": 3,
+        "max_features": "sqrt"
+      },
+      "combined_early": {
+        "n_estimators": 300,
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt"
+      }
+    }
+  },
+  "combined_choice": "combined_stacked",
+  "choice_detail": {
+    "choice": "combined_stacked",
+    "early_cv_f1": 0.9760303851216837,
+    "stacked_cv_f1": 0.9830410914302947,
+    "tie_margin": 0.002
+  },
+  "selected_by": "mean F1 of repeated stratified CV on train+val (test set never used)",
+  "cv_summary": [
+    {
+      "variant": "combined_stacked",
+      "accuracy_mean": 0.98309,
+      "precision_mean": 0.98509,
+      "recall_mean": 0.98105,
+      "f1_mean": 0.98304,
+      "false_alarm_rate_mean": 0.01487,
+      "accuracy_std": 0.0046,
+      "precision_std": 0.00467,
+      "recall_std": 0.00836,
+      "f1_std": 0.00467,
+      "false_alarm_rate_std": 0.00473
+    },
+    {
+      "variant": "combined_early",
+      "accuracy_mean": 0.97596,
+      "precision_mean": 0.97276,
+      "recall_mean": 0.97942,
+      "f1_mean": 0.97603,
+      "false_alarm_rate_mean": 0.0275,
+      "accuracy_std": 0.00498,
+      "precision_std": 0.00756,
+      "recall_std": 0.00943,
+      "f1_std": 0.00502,
+      "false_alarm_rate_std": 0.00791
+    },
+    {
+      "variant": "call_only",
+      "accuracy_mean": 0.96852,
+      "precision_mean": 0.97373,
+      "recall_mean": 0.96311,
+      "f1_mean": 0.96833,
+      "false_alarm_rate_mean": 0.02608,
+      "accuracy_std": 0.00622,
+      "precision_std": 0.00853,
+      "recall_std": 0.01143,
+      "f1_std": 0.00635,
+      "false_alarm_rate_std": 0.00879
+    },
+    {
+      "variant": "message_only",
+      "accuracy_mean": 0.85167,
+      "precision_mean": 0.84926,
+      "recall_mean": 0.85595,
+      "f1_mean": 0.85233,
+      "false_alarm_rate_mean": 0.1526,
+      "accuracy_std": 0.01252,
+      "precision_std": 0.02061,
+      "recall_std": 0.01827,
+      "f1_std": 0.01193,
+      "false_alarm_rate_std": 0.02553
+    }
+  ],
+  "seed": 2027
+}

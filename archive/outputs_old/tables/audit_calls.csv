@@ -1,0 +1,12 @@
+source,rows,safe,fraud,missing_text,exact_duplicates,median_chars
+agent_conversation_labels_0,800,800,0,0,0,1631.5
+agent_conversation_labels_1,800,0,800,0,0,3042.5
+banking_300k,900,900,0,0,0,2165.5
+labels_0,800,800,0,0,0,1118.5
+labels_1,800,0,800,0,0,1867.0
+ncstate_robocall,1432,0,1432,0,575,296.0
+scam_dialogue_label_0,800,800,0,0,1,1193.5
+scam_dialogue_label_1,800,0,800,0,1,1762.0
+telecom_200k,900,900,0,0,0,1910.5
+telecom_corpus_supplimental,900,900,0,0,0,1591.5
+youtube_scam,20,0,20,0,0,2474.5

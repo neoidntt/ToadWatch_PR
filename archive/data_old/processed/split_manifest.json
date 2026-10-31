@@ -1,0 +1,28 @@
+{
+  "seed": 42,
+  "ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "files": {
+    "train": {
+      "rows": 2862,
+      "fraud": 1432,
+      "safe": 1430,
+      "sha256": "f7ccde8bba661673f8a65b641d24704fc388055b5d1b48fc5ebb8c81be2e8d9e"
+    },
+    "val": {
+      "rows": 410,
+      "fraud": 204,
+      "safe": 206,
+      "sha256": "76a8f5204bc7eb94664fa6868acaab3b930e471f8770082eaa2782e6e4df0929"
+    },
+    "test": {
+      "rows": 818,
+      "fraud": 409,
+      "safe": 409,
+      "sha256": "a0389db9296552e644b13a75cc845ee5f2d64fd9c86fc3638620a44d88fec744"
+    }
+  }
+}

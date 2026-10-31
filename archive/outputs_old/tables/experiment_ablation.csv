@@ -1,0 +1,6 @@
+experiment,val_f1
+only msg_kind,0.3988
+"call_only, all features",0.9902
+"call_only, no style/length",0.9633
+"message_only, all features",0.9136
+"message_only, no Tranco",0.8911

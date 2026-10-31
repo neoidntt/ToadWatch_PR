@@ -1,0 +1,35 @@
+{
+  "calls": {
+    "rows_raw": 8952,
+    "unusable_rows": 54,
+    "conflicting_label_rows": 0,
+    "duplicate_rows": 1783,
+    "near_duplicate_rows": 404,
+    "rows_clean": 6711,
+    "class_counts": {
+      "0": 4666,
+      "1": 2045
+    }
+  },
+  "messages": {
+    "rows_raw": 167759,
+    "unusable_rows": 9,
+    "url_duplicate_hosts": {
+      "conflicting_label_rows": 516,
+      "duplicate_rows": 45253
+    },
+    "text_duplicates": {
+      "conflicting_label_rows": 0,
+      "duplicate_rows": 973
+    },
+    "rows_clean": 120164,
+    "counts_by_kind_label": {
+      "email|0": 9644,
+      "email|1": 9693,
+      "sms|0": 8936,
+      "sms|1": 1253,
+      "url|0": 47347,
+      "url|1": 43291
+    }
+  }
+}

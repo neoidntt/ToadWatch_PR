@@ -1,0 +1,11 @@
+check,shared,ok
+call ids shared test/dev,0,True
+message ids shared test/dev,0,True
+call families shared test/dev,0,True
+message families shared test/dev,0,True
+call families shared fold 0/1,0,True
+message families shared fold 0/1,0,True
+call families shared fold 0/2,0,True
+message families shared fold 0/2,0,True
+call families shared fold 1/3,0,True
+message families shared fold 1/3,0,True

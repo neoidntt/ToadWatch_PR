@@ -2,9 +2,4 @@
 __pycache__/
 .ipynb_checkpoints/
 *.pyc
-archive/
-data/
-dataset/
-outputs/interim/
-outputs/models/
 .pytest_cache/

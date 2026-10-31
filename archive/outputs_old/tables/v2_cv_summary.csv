@@ -1,0 +1,12 @@
+,mean_f1,sd
+call_only | frozen settings,0.9903,0.002
+call_only | tuned,0.99,0.0025
+call_only | tuned + threshold,0.992,0.002
+message_only | frozen settings,0.8869,0.0073
+message_only | tuned,0.8884,0.0032
+message_only | tuned + threshold,0.8874,0.0041
+combined | frozen settings,0.9909,0.0018
+combined | tuned,0.9915,0.0014
+combined | tuned + threshold,0.9911,0.0037
+late_fusion | stacked,0.9969,0.0019
+late_fusion | stacked + threshold,0.9963,0.0023

@@ -1,0 +1,13 @@
+channel,held-out (unseen) data,model,test records,accuracy,f1
+call,agent_conversation_labels,feature Random Forest,1277,0.9506656225528582,0.9518716577540107
+call,agent_conversation_labels,TF-IDF text model,1277,0.9984338292873923,0.9984375
+call,labels,feature Random Forest,1279,0.8999218139171228,0.9010819165378671
+call,labels,TF-IDF text model,1279,0.9953088350273651,0.9953125
+call,scam_dialogue_label,feature Random Forest,346,0.9855491329479769,0.9504950495049505
+call,scam_dialogue_label,TF-IDF text model,346,1.0,1.0
+message,sms,feature Random Forest,1091,0.4225481209899175,0.43548387096774194
+message,sms,TF-IDF text model,1091,0.5233730522456462,0.6569920844327177
+message,email,feature Random Forest,1090,0.5577981651376147,0.5956375838926175
+message,email,TF-IDF text model,1090,0.5201834862385321,0.5681255161023947
+message,url,feature Random Forest,1091,0.6370302474793768,0.7195467422096318
+message,url,TF-IDF text model,1091,0.7534372135655362,0.696045197740113

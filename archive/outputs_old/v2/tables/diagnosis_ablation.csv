@@ -1,0 +1,29 @@
+policy,variant,f1_mean,f1_std
+"v1 policy
+(style on, no cross)",call_only,0.9914702186204083,0.002173944172986476
+"v1 policy
+(style on, no cross)",combined_early,0.9913064586863785,0.00487695787133622
+"v1 policy
+(style on, no cross)",combined_stacked,0.9946480266190232,0.0019502238890785274
+"v1 policy
+(style on, no cross)",message_only,0.8865670488823574,0.014865991696860295
+"no style features
+(v2 design)",call_only,0.9679142783279344,0.003532678115783603
+"no style features
+(v2 design)",combined_early,0.9762391142181572,0.004447948717177188
+"no style features
+(v2 design)",combined_stacked,0.9826107360614607,0.004568909421362343
+"no style features
+(v2 design)",message_only,0.8455783103952397,0.013026670760325544
+"no style +
+cross features
+(tested, not used)",call_only,0.9679142783279344,0.003532678115783603
+"no style +
+cross features
+(tested, not used)",combined_early,0.9762391142181572,0.004447948717177188
+"no style +
+cross features
+(tested, not used)",combined_stacked,0.9803243236986118,0.004215259310788378
+"no style +
+cross features
+(tested, not used)",message_only,0.8455783103952397,0.013026670760325544
