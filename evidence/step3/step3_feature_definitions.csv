@@ -1,0 +1,61 @@
+channel,feature,meaning,how_computed
+call,call_pin_request,PIN / code / password request,count of regex matches: \b(pin|passcode|password|one[- ]time (?:code|password)|verification code|security code|cvv|contraseña|clave|código de (?:verificación|seguridad))\b
+call,call_ssn_request,SSN request,count of regex matches: \b(social security|ssn|social insurance|seguro social)\b
+call,call_card_account_number,card/account number request,count of regex matches: \b(card number|credit card|debit card|account number|routing number|número de (?:tarjeta|cuenta))\b
+call,call_verify_confirm,verify/confirm wording,count of regex matches: \b(verify|confirm your|validate|verificar|confirmar su)\b
+call,call_press_one,press 1,count of regex matches: \b(press (?:1|one|2|two|9|nine)|presione (?:1|uno|2|dos)|oprima (?:1|uno))\b
+call,call_urgent_words,urgent words (palabras urgentes),count of regex matches: \b(urgent|urgently|immediately|right away|right now|as soon as possible|last chance|final notice|expires?|expiring|suspended|suspend|deactivated|locked|urgente|inmediatamente|ahora mismo|último aviso|suspendida?)\b
+call,call_threat_legal,"threats (arrest, fine)",count of regex matches: \b(arrest|warrant|lawsuit|legal action|police|prosecut\w*|jail|fine|penalty|arresto|demanda|policía|multa)\b
+call,call_stay_on_line,do not hang up,count of regex matches: \b(stay on the line|do not hang up|don't hang up|no cuelgue|permanezca en la línea)\b
+call,call_dont_tell,secrecy,count of regex matches: \b(don't tell|do not tell|keep (?:this|it) (?:confidential|secret)|no le diga)\b
+call,call_claims_bank,claims to be a bank (banco),count of regex matches: \b(bank|banco|banking|credit union|visa|mastercard|fraud (?:department|alert)|banco popular|firstbank|oriental|ath m[óo]vil|zelle|paypal)\b
+call,call_claims_government,claims to be the government (gobierno),count of regex matches: \b(irs|internal revenue|social security administration|medicare|medicaid|federal trade commission|ftc|fbi|department of|government|hacienda|daco|autoexpreso|treasury|court|officer|agent badge)\b
+call,call_claims_company,claims to be a company,count of regex matches: \b(microsoft|windows|apple|amazon|google|netflix|geek squad|norton|mcafee|tech(?:nical)? support|computer)\b
+call,call_payment_methods,gift cards / wire / crypto,count of regex matches: \b(gift cards?|wire transfers?|western union|moneygram|bitcoins?|crypto|cash app|tarjetas? de regalo|giro)\b
+call,call_money_words,money / prize words,count of regex matches: \b(refund|reimburse|prize|winner|won|reward|lottery|owed|debt|payment|deposit|reembolso|premio|ganador|deuda|pago)\b
+call,call_account_problem,account problem claims,count of regex matches: \b(problem with your|issue with your|unauthorized|suspicious activity|compromised|fraudulent|hacked|virus|problema con su|actividad sospechosa)\b
+call,call_remote_access,remote access requests,count of regex matches: \b(remote access|teamviewer|anydesk|download|install|log ?in to your computer)\b
+call,call_appointment_delivery,normal-call vocabulary,count of regex matches: \b(appointment|delivery|deliver\w*|package|reschedule|schedule|cita|entrega|paquete)\b
+call,call_polite_service,normal-call vocabulary,count of regex matches: \b(thank you for calling|how can i (?:help|assist)|have a (?:great|nice) day|is there anything else|gracias por llamar)\b
+call,call_n_words,number of words in the transcript,computed from the transcript
+call,call_n_chars,number of characters,computed from the transcript
+call,call_digit_ratio,share of characters that are digits,computed from the transcript
+call,call_question_marks,count of '?',computed from the transcript
+call,call_exclamations,count of '!',computed from the transcript
+call,call_avg_word_len,average word length,computed from the transcript
+call,call_urgency_density,(urgent words + legal threats) per 100 words,computed from the transcript
+call,call_secret_asks,PIN requests + SSN requests + card/account-number requests,computed from the transcript
+message/email/link,msg_kw_urgent,urgent words,count of regex matches: \b(urgent|immediately|asap|now|expires?|expired|suspended|limited time|last chance|act now|final notice|urgente|inmediatamente|expira|suspendid[ao])\b
+message/email/link,msg_kw_credentials,credentials words,count of regex matches: \b(password|passcode|pin|login|log in|sign in|verify|confirm|update your|credentials|ssn|social security|contraseña|verifique|confirme|inicie sesión)\b
+message/email/link,msg_kw_money,money words,count of regex matches: \b(free|win|won|winner|prize|cash|reward|refund|payment|bank|account|invoice|\$\d|usd|credit|loan|gratis|premio|reembolso|pago|cuenta|banco)\b
+message/email/link,msg_kw_click,click words,count of regex matches: \b(click|tap|press|open the link|follow the link|haga clic|presione|abra el enlace)\b
+message/email/link,msg_kw_toll_debt,toll_debt words,count of regex matches: \b(toll|autoexpreso|unpaid|overdue|outstanding balance|peaje|deuda|vencid[ao])\b
+message/email/link,msg_kw_delivery,delivery words,count of regex matches: \b(package|parcel|delivery|usps|fedex|dhl|tracking|paquete|entrega|envío)\b
+message/email/link,msg_n_chars,characters in the message,computed from the text / first link
+message/email/link,msg_n_words,words in the message,computed from the text / first link
+message/email/link,msg_digit_ratio,share of digits,computed from the text / first link
+message/email/link,msg_upper_ratio,share of capital letters,computed from the text / first link
+message/email/link,msg_exclamations,count of '!',computed from the text / first link
+message/email/link,msg_question_marks,count of '?',computed from the text / first link
+message/email/link,msg_n_urls,number of links found in the text,computed from the text / first link
+message/email/link,msg_has_url,1 if a link is present,computed from the text / first link
+message/email/link,msg_url_length,length of the first link,computed from the text / first link
+message/email/link,msg_host_length,length of the host name,computed from the text / first link
+message/email/link,msg_n_dots,dots in the link,computed from the text / first link
+message/email/link,msg_host_hyphens,hyphens in the host,computed from the text / first link
+message/email/link,msg_host_digits,digits in the host,computed from the text / first link
+message/email/link,msg_subdomains,number of subdomains,computed from the text / first link
+message/email/link,msg_has_ip,1 if the host is an IP address,computed from the text / first link
+message/email/link,msg_https,1 if the link starts with https://  (HTTPS presence),computed from the text / first link
+message/email/link,msg_has_at,1 if '@' is in the link,computed from the text / first link
+message/email/link,msg_is_shortener,"1 if the host is a URL shortener (bit.ly, tinyurl.com, t.co ...)  (acortadores)",computed from the text / first link
+message/email/link,msg_suspicious_tld,"1 if the top-level domain is on the risky list (.xyz, .top, .tk ...)",computed from the text / first link
+message/email/link,msg_path_length,length of the link path,computed from the text / first link
+message/email/link,msg_query_params,number of ?query parameters,computed from the text / first link
+message/email/link,msg_url_entropy,randomness (Shannon entropy) of the link text,computed from the text / first link
+message/email/link,msg_url_digit_ratio,share of digits in the link,computed from the text / first link
+message/email/link,msg_lookalike_sim,"best similarity (0-1) of the domain name to a known brand (paypal, amazon, bancopopular ...)",computed from the text / first link
+message/email/link,msg_lookalike_typo,1 if similarity is 0.8-0.99 but the name is not the brand (look-alike domain / typo-squat)  (dominios parecidos),computed from the text / first link
+message/email/link,msg_brand_in_host,1 if a brand name is inside an unofficial host (e.g. bancopopular-login.xyz),computed from the text / first link
+message/email/link,msg_in_tranco,1 if the domain is in the Tranco top-1M list (offline stand-in for domain reputation / age),computed from the text / first link
+message/email/link,msg_tranco_log_rank,log10 of the Tranco rank (7.0 = not in the top 1M),computed from the text / first link

@@ -1,0 +1,15 @@
+Step 3 evidence run - 2026-10-27 20:50 - seed 42 - version v1
+train records: 2862   validation records: 410   (test set NOT loaded)
+feature table: train (2862, 60), validation (410, 60)
+  call_only     uses 26 features
+  message_only  uses 34 features
+  combined      uses 60 features
+
+Random Forest settings: {"n_estimators": 300, "max_depth": null, "min_samples_leaf": 1, "max_features": "sqrt", "class_weight": "balanced", "random_state": 42}
+
+VALIDATION METRICS
+                n  accuracy  precision  recall      f1   tn  fp  fn   tp
+variant                                                                 
+call_only     410    0.9878     0.9854  0.9902  0.9878  203   3   2  202
+message_only  410    0.9073     0.9109  0.9020  0.9064  188  18  20  184
+combined      410    0.9854     0.9806  0.9902  0.9854  202   4   2  202

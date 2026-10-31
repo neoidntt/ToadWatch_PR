@@ -1,0 +1,37 @@
+{
+  "models": [
+    "call_only",
+    "message_only",
+    "combined"
+  ],
+  "params": {
+    "call": {
+      "n_estimators": 300,
+      "max_depth": 12,
+      "min_samples_leaf": 3,
+      "max_features": "sqrt"
+    },
+    "message": {
+      "n_estimators": 300,
+      "max_depth": 12,
+      "min_samples_leaf": 1,
+      "max_features": "sqrt"
+    }
+  },
+  "thresholds": {
+    "call_only": 0.4,
+    "message_only": 0.25,
+    "combined": [
+      0.55,
+      0.7
+    ]
+  },
+  "ceilings": {
+    "majority_class": 0.5008004268943437,
+    "call_oracle": 0.874332977588047,
+    "message_oracle": 0.874332977588047,
+    "combined_oracle": 1.0
+  },
+  "seed": 2029,
+  "selected_by": "forest settings: tier-averaged balanced accuracy of each forest on its own text; thresholds: attack-level F1; both from out-of-fold scores of the development data (the test buckets were never used)"
+}

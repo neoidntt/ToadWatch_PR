@@ -1,0 +1,65 @@
+{
+  "calls": {
+    "rows_raw": 11652,
+    "unusable_rows": 55,
+    "conflicting_label_rows": 0,
+    "duplicate_rows": 1783,
+    "near_duplicate_rows": 406,
+    "rows_clean": 9408,
+    "class_counts": {
+      "0": 7365,
+      "1": 2043
+    }
+  },
+  "messages": {
+    "rows_raw": 143759,
+    "unusable_rows": 9,
+    "url_duplicate_hosts": {
+      "conflicting_label_rows": 194,
+      "duplicate_rows": 39363
+    },
+    "text_duplicates": {
+      "conflicting_label_rows": 3,
+      "duplicate_rows": 4031
+    },
+    "rows_clean": 99873,
+    "counts_by_kind_label": {
+      "email|0": 6654,
+      "email|1": 6701,
+      "sms|0": 8935,
+      "sms|1": 4174,
+      "url|0": 40943,
+      "url|1": 32466
+    }
+  },
+  "call_families": {
+    "texts": 9408,
+    "groups": 8617,
+    "largest_group": 94,
+    "largest_group_share": 0.009991496598639456,
+    "texts_in_multi_member_groups": 969,
+    "cross_label_near_duplicates_dropped": 0
+  },
+  "message_families": {
+    "email": {
+      "texts": 13355,
+      "groups": 9252,
+      "largest_group": 118,
+      "largest_group_share": 0.008835642081617372,
+      "texts_in_multi_member_groups": 5139,
+      "cross_label_near_duplicates_dropped": 2
+    },
+    "sms": {
+      "texts": 13109,
+      "groups": 9157,
+      "largest_group": 685,
+      "largest_group_share": 0.052254176519948126,
+      "texts_in_multi_member_groups": 5044,
+      "cross_label_near_duplicates_dropped": 0
+    },
+    "url": {
+      "texts": 73409,
+      "families": 61924
+    }
+  }
+}

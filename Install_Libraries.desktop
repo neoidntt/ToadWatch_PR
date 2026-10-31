@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Install ToadWatch Libraries
+Exec=bash -c 'cd "$(dirname "$(readlink -f "%k")")" && ./install_libraries.sh'
+Terminal=true
+Icon=system-software-install

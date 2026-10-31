@@ -1,0 +1,5 @@
+,accuracy
+majority_class,0.5005405405405405
+call_oracle,0.8745945945945945
+message_oracle,0.8745945945945945
+combined_oracle,1.0
